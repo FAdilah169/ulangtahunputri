@@ -5,6 +5,14 @@ import { db, ref, onValue, remove } from "./firebase.js";
 const pesanList = document.getElementById("pesanList");
 const pesanRef = ref(db, "pesan");
 
+// Ganti password admin sesuai keinginan
+const adminPassword = "putri123";
+let isAdmin = false;
+
+const masukAdmin = prompt("Masukkan password admin (biarkan kosong jika hanya membaca):");
+if (masukAdmin === adminPassword) {
+  isAdmin = true;
+}
 
 onValue(pesanRef, (snapshot) => {
   pesanList.innerHTML = "";
