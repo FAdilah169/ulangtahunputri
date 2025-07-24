@@ -9,7 +9,7 @@ const pesanRef = ref(db, "pesan");
 const adminPassword = "putri123";
 let isAdmin = false;
 
-const masukAdmin = prompt("Masukkan password admin (biarkan kosong jika hanya membaca):");
+const masukAdmin = prompt("biarkan kosong jika hanya membaca [klik ok/cancel]:");
 if (masukAdmin === adminPassword) {
   isAdmin = true;
 }
