@@ -9,10 +9,6 @@ const pesanRef = ref(db, "pesan");
 const adminPassword = "putri123";
 let isAdmin = false;
 
-const masukAdmin = prompt("Masukkan password admin (biarkan kosong jika hanya membaca):");
-if (masukAdmin === adminPassword) {
-  isAdmin = true;
-}
 
 onValue(pesanRef, (snapshot) => {
   pesanList.innerHTML = "";
