@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirim Ucapan untuk Putri 💌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎂 Ucapan untuk Putri 🎀</h1>
+    <form id="form">
+      <input type="text" id="nama" placeholder="Namamu..." required />
+      <textarea id="pesan" placeholder="Tulis ucapan kamu di sini..." required></textarea>
+      <button type="submit" id="submitBtn">Kirim Ucapan</button>
+    </form>
+    <div id="thanks" style="display: none;">🎉 Terima kasih atas ucapannya! 🎉</div>
+  </div>
+
+  <script type="module" src="./firebase.js"></script>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
+<script type="module" src="./read.js"></script>
